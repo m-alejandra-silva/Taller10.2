@@ -13,5 +13,14 @@
     <br>
     <a href="data.html">Ver en data.html</a>
     <script src="js/index.js"></script>
+    <script>
+       
+        document.getElementById('buttonText').addEventListener('click', function() {
+            
+            const inputText = document.getElementById('inputText').value;
+
+            localStorage.setItem('textoGuardado', inputText);
+        });
+    </script>
 </body>
 </html>
